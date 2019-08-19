@@ -8,16 +8,26 @@
   <style>
     .grid {
       display: grid;
-      grid-template-columns: 200px 200px 200px;
+      /* grid-template-columns: 200px auto 200px; */
+      /* grid-template-columns: auto auto auto; */
+      /* grid-template-columns: repeat(3, auto); */
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-gap: 0.8rem;
     }
 
     .item {
-      padding: 3rem;
-      border: crimson 1px solid;
-      background: seagreen;
+      padding: 3.2rem;
+      border: crimson 1.5px solid;
+      background: rgb(27, 201, 102);
       font-size: 1.4rem;
       font-weight: bold;
       text-align: center;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 1.8rem;
     }
   </style>
 
@@ -30,6 +40,21 @@
     <div class="item">item 1</div>
     <div class="item">item 2</div>
     <div class="item">item 3</div>
+    <div class="item">item 4</div>
+    <div class="item">item 5</div>
+    <div class="item">item 6</div>
   </div>
+
+  <main>
+    <section>
+      <h3>Grid Sandbox</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis non corrupti dolores quos quo in soluta magni cumque earum ullam quisquam nulla, totam voluptatibus vero commodi labore.</p>
+    </section>
+    <aside>
+      <h3>Keep Going</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, totam id!</p>
+    </aside>
+  </main>
+
 </body>
 </html>
